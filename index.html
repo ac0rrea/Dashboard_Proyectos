@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080c16"><title>WE ARE · Dashboard de Proyectos</title><link rel="stylesheet" href="styles.css"></head><body><div class="shell"><header class="top"><div><div class="eyebrow">WE ARE / PROYECTOS</div><h1>Dashboard de Proyectos <span>v1.2</span></h1><p>Gestión semanal de cuentas, equipo y accionables</p></div></header><div class="layout"><aside><h2>GESTIÓN DEL ÁREA</h2><button id="nav0" onclick="go(0)">▦ Panel principal</button><button id="nav1" onclick="go(1)">☑ Accionables</button><button id="nav2" onclick="go(2)">◷ Registro de horas</button><footer><small id="saved">Guardado local</small><button onclick="backup()">↓ Exportar respaldo</button><button onclick="document.getElementById('import').click()">↑ Importar respaldo</button><input type="file" id="import" hidden accept=".json" onchange="restore(event)"></footer></aside><main id="main"></main></div><p class="footer-note">WE ARE · Gestión interna · Datos guardados en este navegador</p></div><dialog id="modal"><form id="form"><h2 id="mt"></h2><div class="fields" id="fields"></div><div class="actions"><button type="button" onclick="document.getElementById('modal').close()">Cancelar</button><button class="primary">Guardar cambios</button></div></form></dialog>
+<script src="data/seed.js" defer></script>
+<script src="js/core.js" defer></script>
+<script src="js/dashboard.js" defer></script>
+<script src="js/tasks.js" defer></script>
+<script src="js/history.js" defer></script>
+<script src="js/storage.js" defer></script>
+<script src="js/app.js" defer></script>
+</body></html>
